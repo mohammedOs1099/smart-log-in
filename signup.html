@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sign up</title>
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  
+  <body>
+    <div class="container row-cols-10 row position-relative m-auto justify-content-center  ">
+      <div class="Group my-5   p-5 content">
+        <h1 class="my-3 text-center text-info">Smart Login System</h1>
+        <input class="form-control my-3" type="text" name="" id="signUpName" onkeyup="isValidName()" placeholder="Enter your name" />
+        <p id="name-validate" class="bg-danger text-white p-2 rounded-1 d-none">Invalid Name! Name must Start with capital letter with 
+          atleast 2 chars!
+        </p>
+        <input class="form-control my-3" type="email" name="" id="signUpEmail" onkeyup="isValidEmail()" placeholder="Enter your Email" />
+        <p id="email-validate" class="bg-danger text-white p-2 rounded-1 d-none">Invalid Email! </p>
+        <input class="form-control my-3" type="password" name="" id="signUpPassword" onkeyup="isValidpass()" placeholder="Enter your Password" />
+        <p id="password-validate" class="bg-danger text-white p-2 rounded-1 d-none">Invalid Password! Enter password starts with a capital letter
+        ,includes numbers,symbols & minimum 8 chars !  
+        </p>
+        <p id="fSignup" class="text-danger  text-center visually-hidden">
+          This name or email has been previously used
+        </p>
+        <p id="successSignup" class="text-success  text-center visually-hidden">
+          Your registration has been completed successfully! , You can now log
+          In.
+        </p>
+        <button id="signUpptn" onclick="" class="btn btn-outline-info w-100 my-3">
+          Sign Up
+        </button>
+        <p class="my-4  text-center text-white">
+          You have an account?
+          <a class="px-1  link-light link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover"
+            href="/index.html">Sign In
+          </a>
+        </p>
+      </div>
+  
+  
+  
+      <div id="validMass"
+        class=" visually-hidden  position-absolute start-0 top-0 w-100 h-100 d-flex justify-content-center align-items-center">
+        <div class="validMass    rounded-2  shadow-lg">
+          <header class="box-header w-100 d-flex justify-content-end p-2 ">
+            <button id="closemass" class="btn btn text-bg-secondary border-0">
+              <i class="fa-bold fa-solid fa-xmark"></i></button>
+            </button>
+          </header>
+          <p class=" px-3 text-white ">
+            Site Name or Email or password is not valid, Please follow the rules below:
+          </p>
+          <ol class="rules text-success list-unstyled p-2   mb-2">
+            <li>
+              <i class="fa-regular fa-circle-right m-2  "></i>Site name must begin with capital letter and
+              contain at least 3 characters.
+            </li>
+            <li>
+              <i class="fa-regular fa-circle-right  m-2 "></i>Site Email must be a
+              valid one.
+            </li>
+            <li>
+              <i class="fa-regular fa-circle-right m-2  "></i>Password must contain one digit from 1 to 9 one lowercase
+              letter, one uppercase letter, one special character, no space, and it must be 8-16 characters long.
+            </li>
+          </ol>
+        </div>
+      </div>
+  
+  
+  
+  
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/signup.js"></script>
+  
+  </body>
+</html>

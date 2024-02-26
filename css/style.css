@@ -1,0 +1,26 @@
+body {
+    background-color:#24353F;
+
+}
+
+.content{ 
+      width: 65% ;
+box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);;
+}
+.form-control{
+    
+    background-color: #24353F;
+ 
+}
+.validMass{
+width: 70%;
+    background-color:#253640;
+    border: solid .3rem   white;
+    border-radius: 1rem;
+   
+
+}
+
+.container input::placeholder {
+    color: white;
+}
